@@ -84,6 +84,7 @@ RUN sed -ri 's/#PermitEmptyPasswords no/PermitEmptyPasswords yes/g' /etc/ssh/ssh
 RUN mkdir -p /home/$BUILD_USER/.ssh
 RUN chown -R $BUILD_USER:$BUILD_USER_GROUP /home/$BUILD_USER
 RUN chmod 700 /home/$BUILD_USER/.ssh
+RUN mkdir /var/run/sshd
 
 # Add in our build specific paths
 RUN mkdir -p /opt/corp/local/ant/bin
