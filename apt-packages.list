@@ -9,4 +9,4 @@ wget
 python
 sudo
 git
-svn
+subversion
