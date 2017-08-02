@@ -9,3 +9,4 @@ wget
 python
 sudo
 git
+svn
