@@ -60,9 +60,9 @@ RUN echo "$BUILD_USER ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 RUN apt-get -y install openjdk-7-jdk
 
 # Install ant
-ENV ANT_VERSION 1.10.1
+ENV ANT_VERSION 1.9.6
 RUN cd && \
-    wget -q http://www.us.apache.org/dist/ant/binaries/apache-ant-${ANT_VERSION}-bin.tar.gz && \
+    wget -q http://archive.apache.org/dist/ant/binaries/apache-ant-${ANT_VERSION}-bin.tar.gz && \
     tar -xzf apache-ant-${ANT_VERSION}-bin.tar.gz && \
     mv apache-ant-${ANT_VERSION} /usr/local/apache-ant-${ANT_VERSION} && \
     rm apache-ant-${ANT_VERSION}-bin.tar.gz
